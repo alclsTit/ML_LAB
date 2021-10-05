@@ -100,7 +100,7 @@ def main():
                 correct += (prev.argmax(1) == y).type(torch.float).sum().item()
         test_loss /= num_batches
         correct /= size
-        print(f"Test Error: \n Accuracy: {(100 * correct):>0.1f}%  -------  AvgLoss: {test_loss:>8f} \n")
+        print(f"Test Result: \n Accuracy: {(100 * correct):>0.1f}%  -------  AvgLoss: {test_loss:>8f} \n")
 
     epochs = 5
     for n in range(epochs):
@@ -118,3 +118,22 @@ if __name__ == "__main__":
     main()
     import getpass
     getpass.getpass("\"Enter\" is Quit...")
+
+    """
+    Epoch 5
+     --------------------------------
+    loss: 1.987752 [    0/60000]
+    loss: 1.949280 [ 6400/60000]
+    loss: 2.016590 [12800/60000]
+    loss: 1.868974 [19200/60000]
+    loss: 1.935346 [25600/60000]
+    loss: 1.887770 [32000/60000]
+    loss: 1.822915 [38400/60000]
+    loss: 1.915141 [44800/60000]
+    loss: 1.781166 [51200/60000]
+    loss: 1.780953 [57600/60000]
+    Test Result: 
+     Accuracy: 67.0%  -------  AvgLoss: 1.751234 
+    
+    Done!!!
+    """
