@@ -1,5 +1,8 @@
-import sys
+# python version - 3.7.9
+# pytorch version - 1.9.1 // CUDA 10.2
+# Gpu Setting - No
 
+import sys
 import numpy
 
 # for using pytorch
