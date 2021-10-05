@@ -1,6 +1,7 @@
 # python version - 3.7.9
 # pytorch version - 1.9.1 // CUDA 10.2
 # Gpu Setting - No
+# 2주차 실습내용을 복기하면서 그대로 따라 작업 및 
 
 import sys
 import numpy
